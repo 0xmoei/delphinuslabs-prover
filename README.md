@@ -31,7 +31,7 @@ the maximal is `$380`.
 
 # Installation
 
-### Delete Preserved Variables
+### Step 1: Delete Preserved Variables
 
 * Open `/etc/environment`:
 ```bash
@@ -44,7 +44,7 @@ Delete everything.
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 ```
 
-### Install & Update Packages
+### Step 2: Install & Update Packages
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
@@ -52,7 +52,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
 ```
 
-### Install Docker
+### Step 3: Install Docker
 ```bash
 sudo apt update -y && sudo apt upgrade -y
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -76,7 +76,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 ```
 
-### Install nVIDIA Cuda
+### Step 4: Install nVIDIA Cuda
 ```bash
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
       && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
@@ -106,7 +106,7 @@ Verify installation commands:
 * Nvidia driver: `nvidia-smi`
 * Cuda toolkits: `nvcc --version`
 
-### Set Up HugePages (memory)
+### Step 5: Set Up HugePages (memory)
 The prover node requires `80000 in RAM` in total, and `15000` of it for HugePages (approximately 30 GB of 80 GB memory)
 
 * Check memory: ( you need at least 80 GB)
@@ -147,7 +147,7 @@ Verify:
 grep Huge /proc/meminfo
 ```
 
-### Build prover
+### Step 6: Build prover
 * Clone repo:
 ```bash
 git clone https://github.com/DelphinusLab/prover-node-docker
@@ -177,7 +177,7 @@ nano dry_run_config.json
 bash scripts/build_image.sh
 ```
 
-### Run Prover
+### Step 7: Run Prover
 * Run:
 ```bash
 bash scripts/start.sh
@@ -195,7 +195,7 @@ docker compose logs -fn 100
   * to Restart Node: `docker compose up -d`
   * Check all docker containers: `docker ps -a`
 
-### Check Prover Node Stats
+### Step 8: Check Prover Node Stats
 Search your Node address in https://explorer.zkwasmhub.com/
 
 ![image](https://github.com/user-attachments/assets/8e6df221-0ca3-4811-a011-61b091e902e5)
