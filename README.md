@@ -62,17 +62,33 @@ The prover node requires `80000 in RAM` in total, and `15000` of it for HugePage
 ```bash
 grep Huge /proc/meminfo
 ```
- Ensure `HugePages_Total` is at least 15000.
+Ensure `HugePages_Total` is at least 15000.
 
-Set HugePages temporarily:
+* Set HugePages temporarily:
 ```bash
 sudo sysctl -w vm.nr_hugepages=15000
 ```
 
-Make HugePages permanently:
+* Make HugePages permanently:
+
 Edit `/etc/sysctl.conf` to add:
+```bash
+sudo nano /etc/sysctl.conf
+```
+Add the line:
+```
+vm.nr_hugepages=15000
+```
+To save: Ctrl + X + Y + Enter
 
+Apply configuration:
+```bash
+sudo sysctl -p
+```
 
-
+Verify:
+```bash
+grep Huge /proc/meminfo
+```
 
 
