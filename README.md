@@ -10,7 +10,7 @@ A step by step guide on running delphinus zkWASM prover and earn credits.
 
 ## Rewards
 * TGE in Q4. Provers based on their performance share 3% of token allocation at TGE.
-* If the `liveness-time` is `90%+` and your proving speed keeps stable, then there will be around `estimated $100+/month` + `base` * `number of tasks` you have done.
+* If the `liveness-time` is `90%+` and your proving speed keeps stable, then there will be around `estimated $100+/month` + `base` * `number of proofs` you have generated.
 * From the current estimate of the overall provers, the **minimal reward** of a **certified** node is around `$200/month`.
 the maximal is `$380`.
 
