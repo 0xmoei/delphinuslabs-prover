@@ -15,7 +15,7 @@ A step by step guide on running delphinus zkWASM prover and earn credits.
 the maximal is `$380`.
 
 ## Notes
-* I have tested it on GPU: `RTX 4090 - 24GB vRAM` ($0.41/Month) and it's so fast with 25tasks/day. In my case, it may or may not be profitable at TGE, I just love experiment.
+* I have tested it on GPU: `RTX 4090 - 24GB vRAM` **($0.41/Month)** and it's so fast with 25tasks/day. In my case, it may or may not be profitable at TGE, I just love experiment.
 * Team says only supports `4090` but you might need to test with lower GPUs if you want. I believe `24GB vRAM` is 100% needed.
 * The most effiecient way is to use `Local PC GPUs`.
 * If you run on `Cloud GPU ` like `Vast`, you need to install a `VM Ubuntu` template.
