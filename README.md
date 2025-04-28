@@ -162,7 +162,7 @@ nano prover_config.json
 ```
 * Set:  
   * `server_url`:`"https://rpc.zkwasmhub.com:8090"`
-  * `priv_key`: Your private key (without `0x` prefix).
+  * `priv_key`: Your EVM private key (without `0x` prefix).
 
 * Configure `dry_run_config.json`
 ```bash
@@ -170,7 +170,7 @@ nano dry_run_config.json
 ```
 * Set:  
   * `server_url`:`"https://rpc.zkwasmhub.com:8090"`
-  * `priv_key`: Your private key (without `0x` prefix).
+  * `priv_key`: Your EVM private key same as above (without `0x` prefix).
 
 * Build: 
 ```bash
