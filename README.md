@@ -191,5 +191,12 @@ docker compose logs -fn 100
 ```
 
 * Optional:
-to Stop Node: `docker compose down -v` or `bash scripts/stop.sh`
-to Restart Node: `docker compose up -d`
+  * to Stop Node: `docker compose down -v` or `bash scripts/stop.sh`
+  * to Restart Node: `docker compose up -d`
+  * Check all docker containers: `docker ps -a`
+
+### Check Prover Node Stats
+Search your Node address in https://explorer.zkwasmhub.com/
+
+![image](https://github.com/user-attachments/assets/8e6df221-0ca3-4811-a011-61b091e902e5)
+
