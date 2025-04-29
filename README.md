@@ -84,19 +84,22 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
             sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
             sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 ```
-```
+```bash
 sudo apt-get update
 ```
-```
+```bash
 sudo apt install nvidia-cuda-toolkit
 ```
-```
+```bash
 sudo apt-get install -y nvidia-container-toolkit
 ```
-```
+```bash
 sudo nvidia-ctk runtime configure --runtime=docker --set-as-default
 ```
+```bash
+sudo rmmod nvidia_drm nvidia_modeset nvidia_uvm nvidia
 ```
+```bash
 sudo systemctl enable docker
 sudo systemctl restart docker
 
