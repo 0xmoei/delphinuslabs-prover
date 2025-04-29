@@ -184,6 +184,14 @@ bash scripts/build_image.sh
 ```
 
 ## Step 7: Run Prover
+* Add `-d` in front of `docker compose up -d` command in the bottom of the file:
+```
+nano scripts/start.sh
+```
+
+![image](https://github.com/user-attachments/assets/fd82865b-ac78-4c18-865f-f768dee410f3)
+
+
 * Run:
 ```bash
 bash scripts/start.sh
