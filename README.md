@@ -97,6 +97,9 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker --set-as-default
 ```
 ```bash
+sudo apt install nvidia-cuda-toolkit
+```
+```bash
 sudo rmmod nvidia_drm nvidia_modeset nvidia_uvm nvidia
 ```
 ```bash
