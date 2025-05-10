@@ -5,7 +5,7 @@ A step by step guide on running delphinus zkWASM prover and earn credits.
 ](https://github.com/DelphinusLab/prover-node-docker/tree/main?tab=readme-ov-file#prover-node-configuration)
 ## Requirement
 * GPU: min. RTX 4090
-* RAM: >82 GB
+* RAM: >100 GB
 * Nvidia CUDA, Docker
 * **Local GPU PC** Or **Cloud GPU with `VM ubuntu` template**
 * Ubuntu ( Windows users can [Install Ubuntu](https://github.com/0xmoei/Install-Linux-on-Windows) too)
